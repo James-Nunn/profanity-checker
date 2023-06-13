@@ -12,8 +12,8 @@ Created an extension to String where a function called 'containtsProfanity()' re
 <img src="https://github.com/James-Nunn/profanity-checker/blob/92c15182b279a41918c2ab7146ad68ad00455eae/positive.PNG" width="200px"></div>
 
 ### Current Bugs
-Profanity hidden inside words or behind spectial characters return as false. <br>
-<img src="https://github.com/James-Nunn/profanity-checker/blob/92c15182b279a41918c2ab7146ad68ad00455eae/false-positive.PNG" width="200px">
-
+Profanity with spectial characters return as false. **Bug fixed on right** <br>
+<div><img src="https://github.com/James-Nunn/profanity-checker/blob/92c15182b279a41918c2ab7146ad68ad00455eae/false-positive.PNG" width="200px">
+<img src="https://github.com/James-Nunn/profanity-checker/blob/235e84c7868a24f5cd0711c4e55df5dd6cb7d9c4/fixed-positive.PNG" width="200px"></div>
 
 Courtesy of FreeWebHeaders for '.txt' file of profane words
