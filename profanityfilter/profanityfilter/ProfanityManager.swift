@@ -44,8 +44,9 @@ extension String {
     /// Use "Any String".containsProfanity()
     /// - Returns: Boolean value - If input contains profanity then it returns true
     func containsProfanity() -> Bool{
-        print("\(BadWordClass().words.count)")
-        let lowercasedString = self.lowercased()
+        var lowercasedString = self.lowercased()
+        let specialCharacters: Set<Character> = ["!", "?", "$", "%", "(", ")"]
+        lowercasedString.removeAll(where: {specialCharacters.contains($0)})
         let checkWords = lowercasedString.components(separatedBy: " ")
         let badWords = BadWordClass().words
         for badWord in badWords {
